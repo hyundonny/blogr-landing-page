@@ -1,0 +1,27 @@
+.hero {
+  width: 100%;
+  background-image: url("../images/bg-pattern-intro.svg"),
+    linear-gradient(to bottom, $gradientVeryLightRed, $gradientLightRed);
+  background-position: 35% 35%, center;
+  background-size: 350%, cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 10rem;
+  height: 32.8125rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      color: $white;
+      font-weight: 600;
+      font-family: "Overpass";
+      cursor: pointer;
+    }
+
+    &-icon {
+      cursor: pointer;
+    }
+  }
+}
