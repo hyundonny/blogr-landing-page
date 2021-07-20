@@ -17,13 +17,20 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $white;
 }
 
 #root {
   & > * {
-    padding-top: 49px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-right: 1.375rem;
+    padding-left: 1.375rem;
+    padding-top: 3.0625rem;
+
+    @include breakpoint-up() {
+      padding-right: 10rem;
+      padding-left: 10rem;
+      padding-top: 59px;
+    }
   }
 }
 
@@ -40,14 +47,37 @@ a:visited {
   text-decoration: none;
 }
 
-.hide-for-mobile {
-  @include breakpoint-down(medium) {
-    display: none;
-  }
-}
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  color: $white;
+  background-color: transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid white;
+  width: 7.5rem;
+  height: 2.625rem;
+  font-family: "Ubuntu";
 
-.hide-for-desktop {
-  @include breakpoint-up(large) {
-    display: none;
+  @include breakpoint-up() {
+    width: 8.6875rem;
+    height: 3rem;
+  }
+
+  &.no-border {
+    border: none;
+  }
+
+  &__cta {
+    color: $lightRed;
+    background-color: $white;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+      color: $white;
+      background-color: $veryLightRed;
+    }
   }
 }
