@@ -14,7 +14,7 @@ const Dropdown = ({ label }) => {
   };
 
   return (
-    <div
+    <li
       className="hero__header-dropdown"
       onMouseEnter={changeState}
       onMouseLeave={changeState}
@@ -26,10 +26,12 @@ const Dropdown = ({ label }) => {
         }
       >
         {dropdownOptions[label].map((o) => (
-          <div key={`${label}-${o}`}>{o}</div>
+          <div key={`${label}-${o}`} className="hero__header-dropdown-option">
+            {o}
+          </div>
         ))}
       </div>
-    </div>
+    </li>
   );
 };
 

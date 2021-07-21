@@ -40,22 +40,36 @@
     &-dropdowns {
       flex: 1;
       display: flex;
+      list-style: none;
     }
 
     &-dropdown {
       position: relative;
+
       &:not(:last-child) {
         padding-right: 2rem;
       }
 
       &-label {
         &::after {
+          padding-left: 0.25rem;
           content: url("../images/icon-arrow-light.svg");
         }
       }
 
       &-options {
         position: absolute;
+      }
+
+      &-option {
+        cursor: pointer;
+        padding-top: 0.25rem;
+
+        &:hover {
+          text-decoration: underline;
+          text-decoration-thickness: 5px;
+          text-underline-offset: 0.25rem;
+        }
       }
     }
 
@@ -71,8 +85,6 @@
     margin-left: auto;
     padding-top: 6.25rem;
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
 
     @include breakpoint-up() {
       padding-top: 8.75rem;
@@ -87,10 +99,10 @@
     }
 
     &-text {
-      margin-top: 0.8rem;
       color: darken($white, 5%);
       line-height: 1.25;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
+      padding: 0.8rem;
     }
   }
 
@@ -104,11 +116,11 @@
 }
 
 .open {
-  opacity: 1;
+  display: block;
 }
 
 .closed {
-  opacity: 0;
+  display: none;
 }
 
 .hide-for-mobile {
