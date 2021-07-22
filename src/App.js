@@ -1,7 +1,7 @@
-import Hero from "./sections/hero/hero";
+import Intro from "./sections/intro";
 
 const App = () => {
-  return <Hero />;
+  return <Intro />;
 };
 
 export default App;

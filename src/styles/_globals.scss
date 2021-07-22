@@ -10,33 +10,19 @@
   font-size: 100%;
 }
 
+html {
+  width: 100%;
+}
+
 body {
   background: $white;
-  min-height: 100vh;
-  width: 100vw;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $white;
 }
 
-#root {
-  min-width: 375px;
-  & > * {
-    padding-right: 1.375rem;
-    padding-left: 1.375rem;
-    padding-top: 3.0625rem;
-
-    @include breakpoint-up() {
-      padding-right: 10rem;
-      padding-left: 10rem;
-      padding-top: 59px;
-    }
-  }
-}
-
-img,
-svg {
+img {
   max-width: 100%;
   display: block;
 }
@@ -48,48 +34,17 @@ a:visited {
   text-decoration: none;
 }
 
-.button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 2rem;
-  color: $white;
-  background-color: transparent;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border: 1px solid white;
-  width: 7.5rem;
-  height: 2.625rem;
-  font-family: "Ubuntu";
+li {
+  list-style: none;
+}
 
-  @include breakpoint-up() {
-    width: 8.6875rem;
-    height: 3rem;
-  }
-
-  &.no-border {
-    border: none;
-  }
-
-  &__cta {
-    color: $lightRed;
-    background-color: $white;
-    transition: all 100ms ease-in-out;
-
-    &:hover {
-      color: $white;
-      background-color: $veryLightRed;
-    }
-  }
+#root {
+  width: 100%;
 }
 
 .container {
-  max-width: 500px;
-  min-width: 330px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include breakpoint-up() {
-    max-width: 1110px;
-  }
+  margin: 0 auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 69.375em;
 }
