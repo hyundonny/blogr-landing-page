@@ -1,0 +1,15 @@
+.desktop-menu-nav {
+  display: flex;
+}
+
+.labels {
+  position: relative;
+
+  &::after {
+    content: url("../images/icon-arrow-light.svg");
+  }
+}
+
+.links {
+  position: absolute;
+}

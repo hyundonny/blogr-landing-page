@@ -1,9 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 
+import MobileMenuIcon from "./mobileMenuIcon";
 import MobileMenu from "./mobileMenu";
-
-import Hamburger from "../images/icon-hamburger.svg";
-import Close from "../images/icon-close.svg";
+import DesktopMenu from "./desktopMenu";
 
 const Header = () => {
   const [showHamburger, setShowHamburger] = useState(false);
@@ -31,7 +30,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [handleResize]);
+  });
 
   return (
     <header className="navbar container">
@@ -39,16 +38,14 @@ const Header = () => {
         Blogr
       </a>
 
-      {showHamburger && (
-        <img
-          src={mobileMenuOpen ? Close : Hamburger}
-          alt="mobile menu"
-          onClick={toggleMobileMenu}
-          className="hamburger"
+      {showHamburger ? (
+        <MobileMenuIcon
+          mobileMenuOpen={mobileMenuOpen}
+          toggleMobileMenu={toggleMobileMenu}
         />
+      ) : (
+        <DesktopMenu />
       )}
-
-      {mobileMenuOpen && <MobileMenu open={mobileMenuOpen} />}
     </header>
   );
 };
