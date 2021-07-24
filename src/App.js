@@ -1,4 +1,4 @@
-import Intro from "./sections/intro";
+import Intro from "./sections/IntroSection";
 
 const App = () => {
   return <Intro />;

@@ -1,15 +1,70 @@
-.desktop-menu-nav {
+.desktop-menu {
+  flex: 1;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdowns {
+  display: flex;
+  cursor: pointer;
 }
 
 .labels {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
 
   &::after {
+    position: absolute;
     content: url("../images/icon-arrow-light.svg");
+    transition: all 0.3s ease;
+    right: -1rem;
   }
 }
 
 .links {
+  cursor: pointer;
   position: absolute;
+  top: 100%;
+  display: none;
+}
+
+.labels:hover .links {
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.link {
+  padding-top: 0.25rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.25rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Overpass";
+  background: transparent;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 2rem;
+  width: 8.5625rem;
+  height: 3rem;
+}
+
+.button__cta {
+  color: $lightRed;
+  background: white;
 }

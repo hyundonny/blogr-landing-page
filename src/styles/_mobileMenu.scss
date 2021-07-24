@@ -1,17 +1,25 @@
-.mobileMenu {
-  background: black;
-  text-align: center;
+.mobile-menu {
+  margin-top: 4.375rem;
+  display: none;
   position: absolute;
-  top: 125%;
-  animation: slideIn 1s forwards;
+  color: black;
+  text-align: center;
+  min-width: calc(100% - 4rem);
 }
 
-@keyframes slideIn {
-  from {
-    left: -100%;
-  }
+.mobile-menu.active {
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 0.1rem;
+}
 
-  to {
-    left: 0;
+.mobile-menu__label {
+  &::after {
+    display: inline-block;
+    position: relative;
+    left: 1rem;
+    content: url("../images/icon-arrow-dark.svg");
   }
 }

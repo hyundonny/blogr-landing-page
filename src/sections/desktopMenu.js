@@ -1,7 +1,7 @@
 const DesktopMenu = () => {
   return (
-    <nav>
-      <ul className="desktop-menu-nav">
+    <nav className="desktop-menu">
+      <ul className="dropdowns">
         <li className="labels">
           Product
           <ul className="links">
@@ -30,6 +30,14 @@ const DesktopMenu = () => {
           </ul>
         </li>
       </ul>
+      <div className="buttons">
+        <button type="button" className="button">
+          Login
+        </button>
+        <button type="button" className="button button__cta">
+          Sign Up
+        </button>
+      </div>
     </nav>
   );
 };
