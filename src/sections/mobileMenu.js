@@ -1,37 +1,18 @@
+import Dropdown from "../components/dropdown";
 import cn from "classnames";
 
 const MobileMenu = ({ mobileMenuOpen }) => {
   return (
     <div className={cn("mobile-menu container", { active: mobileMenuOpen })}>
-      <ul>
-        <li className="mobile-menu__labels">
-          <p className="mobile-menu__label">Product</p>
-          <ul>
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
-          </ul>
-        </li>
-        <li className="mobile-menu__labels">
-          <p className="mobile-menu__label">Company</p>
-          <ul>
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-        </li>
-        <li className="mobile-menu__labels">
-          <p className="mobile-menu__label">Connect</p>
-          <ul>
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
-          </ul>
-        </li>
+      <ul className="mobile-menu__links">
+        <Dropdown label="Product" />
+        <Dropdown label="Company" />
+        <Dropdown label="Connect" />
       </ul>
+      <div className="mobile-menu__buttons">
+        <button className="mobile-menu__button">Login</button>
+        <button className="mobile-menu__button cta">Sign Up</button>
+      </div>
     </div>
   );
 };
