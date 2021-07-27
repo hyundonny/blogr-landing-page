@@ -49,3 +49,38 @@ li {
   padding-right: 2rem;
   max-width: 69.375em;
 }
+
+.button {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Overpass";
+  background: transparent;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 2rem;
+  width: 8.5625rem;
+  height: 3rem;
+
+  &.border {
+    border: 1px solid white;
+  }
+
+  &.mobile {
+    color: $veryDarkBlackBlue;
+  }
+}
+
+.bg-white {
+  background: white;
+  color: $lightRed;
+}
+
+.bg-gradient {
+  color: white;
+  background: linear-gradient(
+    to right,
+    $gradientVeryLightRed,
+    $gradientLightRed
+  );
+}

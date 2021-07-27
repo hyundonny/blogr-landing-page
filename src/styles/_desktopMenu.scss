@@ -50,21 +50,3 @@
 .buttons {
   display: flex;
 }
-
-.button {
-  font-size: 1.125rem;
-  font-weight: 600;
-  font-family: "Overpass";
-  background: transparent;
-  border: 1px solid transparent;
-  color: white;
-  cursor: pointer;
-  border-radius: 2rem;
-  width: 8.5625rem;
-  height: 3rem;
-}
-
-.button__cta {
-  color: $lightRed;
-  background: white;
-}

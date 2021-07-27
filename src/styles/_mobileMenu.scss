@@ -70,25 +70,3 @@
   gap: 1rem;
   border-top: 1px solid $grayishBlue;
 }
-
-.mobile-menu__button {
-  font-size: 1.25rem;
-  font-weight: 600;
-  font-family: "Overpass";
-  cursor: pointer;
-  border-radius: 2rem;
-  width: 8.5625rem;
-  height: 3rem;
-  color: $veryDarkBlackBlue;
-  border: 1px solid transparent;
-  background: transparent;
-}
-
-.mobile-menu__button.cta {
-  color: white;
-  background: linear-gradient(
-    to right,
-    $gradientVeryLightRed,
-    $gradientLightRed
-  );
-}

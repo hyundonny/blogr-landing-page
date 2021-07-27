@@ -3,7 +3,7 @@ import DesktopMenu from "./desktopMenu";
 
 const Header = ({ showHamburger, mobileMenuOpen, toggleMobileMenu }) => {
   return (
-    <header className="navbar container">
+    <header className="navbar">
       <a href="http://localhost:3000/" className="logo">
         Blogr
       </a>

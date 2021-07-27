@@ -1,4 +1,4 @@
-.hero {
+.intro {
   width: 100%;
   background-image: url("../images/bg-pattern-intro.svg"),
     linear-gradient(to bottom, $gradientVeryLightRed, $gradientLightRed);
@@ -39,12 +39,12 @@
     &-text {
       color: darken($white, 5%);
       line-height: 1.25;
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       padding: 0.8rem;
     }
   }
 
-  &__links {
+  &__buttons {
     margin-top: 3rem;
 
     display: flex;
