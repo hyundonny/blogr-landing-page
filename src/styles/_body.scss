@@ -1,0 +1,34 @@
+.body {
+  font-family: "Overpass";
+}
+
+.main {
+  display: flex;
+}
+
+.top {
+}
+
+.text-area {
+  width: 50%;
+}
+
+.image-area {
+  width: 50vw;
+}
+
+.heading {
+  color: $veryDarkBlue;
+}
+
+h2.heading {
+  text-align: center;
+}
+
+.copy {
+  color: $veryDarkGrayishBlue;
+}
+
+.white {
+  color: white;
+}
