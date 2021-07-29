@@ -1,11 +1,11 @@
 import Intro from "./sections/IntroSection";
-import Body from "./sections/Body";
+import MainTop from "./sections/MainTop";
 
 const App = () => {
   return (
     <>
       <Intro />
-      <Body />
+      <MainTop />
     </>
   );
 };

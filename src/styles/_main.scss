@@ -1,0 +1,74 @@
+.main {
+  font-family: "Overpass";
+  margin: 0 auto;
+
+  @media (min-width: 769px) {
+    max-width: 90em;
+  }
+}
+
+.main__flexbox {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.main__heading {
+  padding-bottom: 2.625rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.75rem;
+
+  @media (min-width: 769px) {
+    padding: 0;
+    font-size: 2.125rem;
+  }
+}
+
+.main__text-area {
+  text-align: center;
+
+  @media (min-width: 769px) {
+    display: flex;
+    align-items: center;
+    max-width: 550px;
+    text-align: left;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: 7.875rem;
+  }
+}
+
+.main__subheading {
+  padding-top: 3.125rem;
+  padding-bottom: 1.5625rem;
+  font-size: 1.75rem;
+}
+
+.main__image-area {
+  width: 100%;
+
+  @media (min-width: 769px) {
+    max-width: 40%;
+  }
+}
+
+.main__image-constraint {
+  @media (min-width: 769px) {
+    max-width: 38.25rem;
+    overflow-x: clip;
+    float: right;
+  }
+
+  img {
+    width: 100%;
+
+    @media (min-width: 769px) {
+      width: auto;
+    }
+  }
+}

@@ -23,7 +23,6 @@ body {
 }
 
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -44,10 +43,30 @@ li {
 }
 
 .container {
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  max-width: 69.375em;
+  @media (min-width: 769px) {
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 69.375em;
+  }
+}
+
+.more-padding {
+  padding: 0;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.less-padding {
+  padding: 0;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+  }
 }
 
 .button {
@@ -83,4 +102,28 @@ li {
     $gradientVeryLightRed,
     $gradientLightRed
   );
+}
+
+.dark-heading {
+  color: $veryDarkBlue;
+}
+
+.dark-copy {
+  color: $veryDarkGrayishBlue;
+}
+
+.white {
+  color: white;
+}
+
+.desktop-image {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-image {
+  @media (min-width: 769px) {
+    display: none;
+  }
 }

@@ -40,14 +40,14 @@ const Intro = () => {
           toggleMobileMenu={toggleMobileMenu}
         />
         <MobileMenu mobileMenuOpen={mobileMenuOpen} />
-        <div className="intro__body">
+        <div className="intro__body more-padding">
           <h1 className="intro__body-title">A modern publishing platform</h1>
           <p className="intro__body-text">
             Grow your audience and build your online brand
           </p>
         </div>
       </div>
-      <div className="intro__buttons">
+      <div className="intro__buttons more-padding">
         <button className="button bg-white">Start for free</button>
         <button className="button border">Learn more</button>
       </div>
