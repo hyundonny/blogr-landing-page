@@ -1,45 +1,57 @@
-.main {
+.main-top__container {
   font-family: "Overpass";
   margin: 0 auto;
+  padding-bottom: 3.625rem;
+  max-width: 45em;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1200px) {
     max-width: 90em;
+    position: relative;
   }
 }
 
-.main__flexbox {
+.main-top__flexbox {
   display: flex;
   flex-direction: column-reverse;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: center;
   }
 }
 
 .main__heading {
+  padding-top: 5.625rem;
   padding-bottom: 2.625rem;
   font-weight: 700;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2rem;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1200px) {
     padding: 0;
-    font-size: 2.125rem;
+    font-size: 2.5rem;
+    transform: translateY(7.5rem);
   }
 }
 
 .main__text-area {
   text-align: center;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1200px) {
     display: flex;
     align-items: center;
-    max-width: 550px;
+    width: 50%;
     text-align: left;
     font-size: 1rem;
     margin-left: auto;
-    margin-right: 7.875rem;
+    padding-left: 2rem;
+    justify-content: flex-end;
+  }
+}
+
+.main__texts {
+  @media (min-width: 1200px) {
+    max-width: 502px;
   }
 }
 
@@ -49,26 +61,30 @@
   font-size: 1.75rem;
 }
 
-.main__image-area {
-  width: 100%;
+.main-top__image-area {
+  @media (max-width: 1199px) {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-  @media (min-width: 769px) {
-    max-width: 40%;
+  @media (min-width: 1200px) {
+    margin: 0;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
 .main__image-constraint {
-  @media (min-width: 769px) {
-    max-width: 38.25rem;
+  @media (min-width: 1200px) {
+    width: 80%;
     overflow-x: clip;
-    float: right;
   }
+}
 
-  img {
-    width: 100%;
-
-    @media (min-width: 769px) {
-      width: auto;
-    }
+.main__image-right {
+  @media (min-width: 1200px) {
+    left: -4rem;
   }
 }

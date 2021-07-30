@@ -4,11 +4,11 @@ import editorMobile from "../images/illustration-editor-mobile.svg";
 const MainTop = () => {
   return (
     <section>
-      <div className="main main-top">
+      <div className="main-top__container">
         <h2 className="main__heading dark-heading">Designed for the future</h2>
-        <div className="main__flexbox">
+        <div className="main-top__flexbox">
           <div className="main__text-area more-padding">
-            <div>
+            <div className="main__texts">
               <h3 className="main__subheading dark-heading ">
                 Introducing an extensible editor
               </h3>
@@ -31,9 +31,13 @@ const MainTop = () => {
               </p>
             </div>
           </div>
-          <div className="main__image-area">
+          <div className="main-top__image-area">
             <div className="main__image-constraint">
-              <img src={editorDesktop} alt="editor" className="desktop-image" />
+              <img
+                src={editorDesktop}
+                alt="editor"
+                className="desktop-image main__image-right"
+              />
               <img src={editorMobile} alt="editor" className="mobile-image" />
             </div>
           </div>

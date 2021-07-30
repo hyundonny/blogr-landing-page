@@ -117,13 +117,16 @@ li {
 }
 
 .desktop-image {
-  @media (max-width: 768px) {
+  width: auto;
+  position: relative;
+  @media (max-width: 1200px) {
     display: none;
   }
 }
 
 .mobile-image {
-  @media (min-width: 769px) {
+  width: 100%;
+  @media (min-width: 1200px) {
     display: none;
   }
 }
