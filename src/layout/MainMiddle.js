@@ -1,4 +1,4 @@
-import phones from "../images/illustration-phones.svg";
+import phones from "../assets/images/illustration-phones.svg";
 
 const MainMiddle = () => {
   return (

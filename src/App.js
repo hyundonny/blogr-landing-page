@@ -1,6 +1,7 @@
-import Intro from "./sections/IntroSection";
-import MainTop from "./sections/MainTop";
-import MainMiddle from "./sections/MainMiddle";
+import Intro from "./layout/IntroSection";
+import MainTop from "./layout/MainTop";
+import MainMiddle from "./layout/MainMiddle";
+import MainBottom from "./layout/MainBottom";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Intro />
       <MainTop />
       <MainMiddle />
+      <MainBottom />
     </>
   );
 };

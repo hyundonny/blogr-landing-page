@@ -1,5 +1,5 @@
-import Hamburger from "../images/icon-hamburger.svg";
-import Close from "../images/icon-close.svg";
+import Hamburger from "../assets/images/icon-hamburger.svg";
+import Close from "../assets/images/icon-close.svg";
 
 const MobileMenuIcon = ({ mobileMenuOpen, toggleMobileMenu }) => {
   return (

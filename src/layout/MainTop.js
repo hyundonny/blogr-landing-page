@@ -1,5 +1,5 @@
-import editorDesktop from "../images/illustration-editor-desktop.svg";
-import editorMobile from "../images/illustration-editor-mobile.svg";
+import editorDesktop from "../assets/images/illustration-editor-desktop.svg";
+import editorMobile from "../assets/images/illustration-editor-mobile.svg";
 
 const MainTop = () => {
   return (

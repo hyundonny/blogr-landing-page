@@ -16,7 +16,8 @@ html {
 
 body {
   background: $white;
-  line-height: 1.5;
+  font-family: "Overpass";
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $white;
@@ -39,6 +40,11 @@ li {
 
 p {
   // affects all body copies
+  @media (max-width: 1199px) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   max-width: 500px;
   margin: 0 auto;
 }
@@ -152,7 +158,7 @@ p {
 .desktop-image {
   width: auto;
   position: relative;
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }

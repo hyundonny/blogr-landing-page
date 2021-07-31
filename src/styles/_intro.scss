@@ -1,6 +1,6 @@
 .intro {
   width: 100%;
-  background-image: url("../images/bg-pattern-intro.svg"), $ctaGradient;
+  background-image: url("../assets/images/bg-pattern-intro.svg"), $ctaGradient;
   background-position: 35% 35%, center;
   background-size: 1440px, cover;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   @media (min-width: 769px) {
     background-size: 1440px * 2.125, cover;
     background-position: left 25% bottom 47%, center;
-    background-image: url("../images/bg-pattern-intro.svg"), $ctaGradient;
+    background-image: url("../assets/images/bg-pattern-intro.svg"), $ctaGradient;
     padding-bottom: 9.6875rem;
   }
 

@@ -1,5 +1,5 @@
 .main-middle {
-  background-image: url(../images/bg-pattern-circles.svg),
+  background-image: url(../assets/images/bg-pattern-circles.svg),
     linear-gradient($gradientVeryDarkGrayBlue, $gradientVeryDarkDesaturatedBlue);
   background-repeat: no-repeat;
   border-bottom-left-radius: 8rem;
@@ -17,7 +17,7 @@
     border-top-right-radius: 4rem;
     background-position-y: bottom;
     padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 6.5rem;
   }
 }
 
@@ -56,6 +56,10 @@
     width: 50%;
     top: -100%;
     left: 0;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -78,5 +82,5 @@
 
 .main--middle__heading {
   font-size: 2.125rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
