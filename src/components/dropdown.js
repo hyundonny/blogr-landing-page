@@ -21,16 +21,16 @@ const Dropdown = ({ label, mobileMenuOpen }) => {
   };
 
   const liElems = links[label].map((link) => (
-    <li className="mobile-menu__nav" key={link}>
-      {link}
+    <li key={link} className="mobile-menu__nav">
+      <span>{link}</span>
     </li>
   ));
 
   return (
     <li className="mobile-menu__labels">
-      <p className="mobile-menu__label" onClick={handleClick}>
+      <h3 className="mobile-menu__label" onClick={handleClick}>
         {label}
-      </p>
+      </h3>
       <ul className={cn("mobile-menu__navs", { open: dropdownOpen })}>
         {liElems}
       </ul>

@@ -79,35 +79,62 @@ p {
   font-size: 1.125rem;
   font-weight: 600;
   font-family: "Overpass";
-  background: transparent;
-  border: 1px solid transparent;
-  color: white;
-  cursor: pointer;
   border-radius: 2rem;
   width: 8.5625rem;
   height: 3rem;
+  cursor: pointer;
+  border: 1px solid transparent;
 
-  &.border {
+  &.bgGradient {
+    color: white;
+    background: $ctaGradient;
+
+    &:hover {
+      background: $ctaHoverGradient;
+    }
+  }
+
+  &.bgWhite {
+    background: white;
+    color: $lightRed;
+
+    &:hover {
+      color: white;
+      background: $veryLightRed;
+    }
+  }
+
+  &.noBgDark {
+    background: transparent;
+    color: $veryDarkBlue;
+
+    &:hover {
+      color: lighten($veryDarkBlue, 50%);
+    }
+  }
+
+  &.noBgWhite {
+    background: transparent;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 0.25rem;
+      text-decoration-color: white;
+      text-underline-offset: 0.35rem;
+    }
+  }
+
+  &.borderWhite {
+    color: white;
+    background: transparent;
     border: 1px solid white;
+
+    &:hover {
+      background: white;
+      color: $lightRed;
+    }
   }
-
-  &.mobile {
-    color: $veryDarkBlackBlue;
-  }
-}
-
-.bg-white {
-  background: white;
-  color: $lightRed;
-}
-
-.bg-gradient {
-  color: white;
-  background: linear-gradient(
-    to right,
-    $gradientVeryLightRed,
-    $gradientLightRed
-  );
 }
 
 .dark-heading {

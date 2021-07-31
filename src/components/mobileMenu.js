@@ -17,8 +17,8 @@ const MobileMenu = ({ mobileMenuOpen }) => {
         <Dropdown label="Connect" mobileMenuOpen={mobileMenuOpen} />
       </ul>
       <div className="mobile-menu__buttons">
-        <button className="button mobile">Login</button>
-        <button className="button bg-gradient">Sign Up</button>
+        <button className="button noBgDark">Login</button>
+        <button className="button bgGradient">Sign Up</button>
       </div>
     </div>
   );

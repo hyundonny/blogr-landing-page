@@ -31,8 +31,8 @@ const DesktopMenu = () => {
         </li>
       </ul>
       <div className="buttons">
-        <button className="button">Login</button>
-        <button className="button bg-white">Sign Up</button>
+        <button className="button noBgWhite">Login</button>
+        <button className="button bgWhite">Sign Up</button>
       </div>
     </nav>
   );

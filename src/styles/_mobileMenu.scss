@@ -27,6 +27,7 @@
   color: $veryDarkBlue;
   font-family: "Ubuntu";
   font-weight: 400;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-top: 1rem;
@@ -58,6 +59,17 @@
 .mobile-menu__nav {
   & + & {
     padding-top: 1rem;
+  }
+}
+
+.mobile-menu__nav span {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.125rem;
+    text-decoration-color: $veryDarkBlue;
+    text-underline-offset: 0.3rem;
   }
 }
 

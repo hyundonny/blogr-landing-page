@@ -18,3 +18,11 @@ $gradientVeryLightRed: hsl(13, 100%, 72%);
 // Background gradient - body
 $gradientVeryDarkGrayBlue: hsl(237, 17%, 21%);
 $gradientVeryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+
+// linear gradients
+$ctaGradient: linear-gradient(120deg, $gradientVeryLightRed, $gradientLightRed);
+$ctaHoverGradient: linear-gradient(
+  300deg,
+  $gradientVeryLightRed,
+  $gradientLightRed
+);

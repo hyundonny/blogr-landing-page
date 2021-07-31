@@ -60,8 +60,8 @@ const Intro = () => {
         </div>
       </div>
       <div className="intro__buttons more-padding">
-        <button className="button bg-white">Start for free</button>
-        <button className="button border">Learn more</button>
+        <button className="button bgWhite">Start for free</button>
+        <button className="button borderWhite">Learn more</button>
       </div>
     </section>
   );
