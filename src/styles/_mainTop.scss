@@ -1,0 +1,36 @@
+.main-top__container {
+  font-family: "Overpass";
+  margin: 0 auto;
+  padding-bottom: 3.625rem;
+  max-width: 45em;
+
+  @media (min-width: 1200px) {
+    max-width: 90em;
+    position: relative;
+  }
+}
+
+.main-top__flexbox {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.main-top__image-area {
+  @media (max-width: 1199px) {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

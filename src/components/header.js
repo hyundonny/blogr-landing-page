@@ -1,5 +1,5 @@
 import MobileMenuIcon from "./mobileMenuIcon";
-import DesktopMenu from "./desktopMenu";
+import DesktopMenu from "./DesktopMenu";
 
 const Header = ({ showHamburger, mobileMenuOpen, toggleMobileMenu }) => {
   return (

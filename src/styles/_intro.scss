@@ -9,8 +9,8 @@
   padding-bottom: 8.5rem;
 
   @media (min-width: 769px) {
-    background-size: 1440px * 1.75, cover;
-    background-position: left 30% bottom 50%, center;
+    background-size: 1440px * 2.125, cover;
+    background-position: left 25% bottom 47%, center;
     background-image: url("../images/bg-pattern-intro.svg"),
       linear-gradient(to right, $gradientVeryLightRed, $gradientLightRed);
     padding-bottom: 9.6875rem;

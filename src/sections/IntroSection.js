@@ -1,15 +1,20 @@
 import { useState, useEffect, useCallback } from "react";
 
-import Header from "./header";
-import MobileMenu from "./mobileMenu";
+import Header from "../components/header";
+import MobileMenu from "../components/mobileMenu";
 
 const Intro = () => {
   const [showHamburger, setShowHamburger] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = useCallback(() => {
+  const toggleMobileMenu = useCallback((e) => {
+    e.stopPropagation();
     setMobileMenuOpen((prev) => !prev);
   }, []);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   const handleResize = () => {
     if (window.innerWidth > 769) {
@@ -22,6 +27,13 @@ const Intro = () => {
 
   useEffect(() => {
     window.innerWidth <= 769 ? setShowHamburger(true) : setShowHamburger(false);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("click", closeMobileMenu);
+    return () => {
+      window.removeEventListener("click", closeMobileMenu);
+    };
   }, []);
 
   useEffect(() => {

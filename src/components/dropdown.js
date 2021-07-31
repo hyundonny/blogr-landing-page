@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import cn from "classnames";
 
 const links = {
@@ -7,16 +7,23 @@ const links = {
   Connect: ["Contact", "Newsletter", "LinkedIn"],
 };
 
-const Dropdown = ({ label }) => {
+const Dropdown = ({ label, mobileMenuOpen }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  useEffect(() => {
+    if (!mobileMenuOpen) {
+      setDropdownOpen(false);
+    }
+  }, [mobileMenuOpen]);
+
   const handleClick = () => {
-    console.log(dropdownOpen);
     setDropdownOpen((prev) => !prev);
   };
 
   const liElems = links[label].map((link) => (
-    <li className="mobile-menu__nav">{link}</li>
+    <li className="mobile-menu__nav" key={link}>
+      {link}
+    </li>
   ));
 
   return (
