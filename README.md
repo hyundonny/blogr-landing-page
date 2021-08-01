@@ -28,10 +28,6 @@ Desktop
 
 ![](./src/screenshots/desktop.png)
 
-Mobile
-
-<img src="./src/screenshots/mobile.png" height="600" />
-
 ## My process
 
 ### Built with
