@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
-import Header from "../components/header";
-import MobileMenu from "../components/mobileMenu";
+import Header from "../components/Header";
+import MobileMenu from "../components/MobileMenu";
 
 const Intro = () => {
   const [showHamburger, setShowHamburger] = useState(false);
@@ -52,7 +52,7 @@ const Intro = () => {
           toggleMobileMenu={toggleMobileMenu}
         />
         <MobileMenu mobileMenuOpen={mobileMenuOpen} />
-        <div className="intro__body more-padding">
+        <div className="intro__body">
           <h1 className="intro__body-title">A modern publishing platform</h1>
           <p className="intro__body-text">
             Grow your audience and build your online brand

@@ -52,3 +52,22 @@
     left: -4rem;
   }
 }
+
+.dark-heading {
+  color: $veryDarkBlue;
+}
+
+.dark-copy {
+  color: $veryDarkGrayishBlue;
+}
+
+.copy {
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media (max-width: 1199px) {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}

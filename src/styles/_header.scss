@@ -10,18 +10,6 @@
   gap: 4rem;
 }
 
-.logo {
-  color: $white;
-  font-weight: 700;
-  font-size: 1.75rem;
-  font-family: "Ubuntu";
-  cursor: pointer;
-
-  @media (min-width: 769px) {
-    font-size: 2.5rem;
-  }
-}
-
 .mobile-icon-container {
   cursor: pointer;
 

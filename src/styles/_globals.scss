@@ -38,29 +38,17 @@ li {
   list-style: none;
 }
 
-p {
-  // affects all body copies
-  @media (max-width: 1199px) {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 #root {
   width: 100%;
   min-width: 375px;
 }
 
 .container {
-  @media (min-width: 769px) {
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 69.375em;
-  }
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 69.375em;
 }
 
 .more-padding {
@@ -78,6 +66,19 @@ p {
     width: 100%;
     padding-left: 1.375rem;
     padding-right: 1.375rem;
+  }
+}
+
+.logo {
+  color: $white;
+  font-weight: 700;
+  font-size: 2.25rem;
+  font-family: "Overpass";
+  cursor: pointer;
+  line-height: 1.5;
+
+  @media (min-width: 769px) {
+    font-size: 2.5rem;
   }
 }
 
@@ -141,14 +142,6 @@ p {
       color: $lightRed;
     }
   }
-}
-
-.dark-heading {
-  color: $veryDarkBlue;
-}
-
-.dark-copy {
-  color: $veryDarkGrayishBlue;
 }
 
 .white {

@@ -1,13 +1,10 @@
-import MobileMenuIcon from "./mobileMenuIcon";
+import MobileMenuIcon from "./MobileMenuIcon";
 import DesktopMenu from "./DesktopMenu";
 
 const Header = ({ showHamburger, mobileMenuOpen, toggleMobileMenu }) => {
   return (
-    <header className="navbar less-padding">
-      <a href="http://localhost:3000/" className="logo">
-        Blogr
-      </a>
-
+    <header className="navbar">
+      <h2 className="logo">Blogr</h2>
       {showHamburger ? (
         <MobileMenuIcon
           mobileMenuOpen={mobileMenuOpen}

@@ -1,4 +1,4 @@
-import Dropdown from "./dropdown";
+import Dropdown from "./Dropdown";
 import cn from "classnames";
 
 const MobileMenu = ({ mobileMenuOpen }) => {

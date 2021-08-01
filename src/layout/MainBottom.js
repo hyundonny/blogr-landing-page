@@ -11,7 +11,7 @@ const MainBottom = () => {
         </div>
         <div className="text-area">
           <h3 className="main__subheading dark-heading">Free, open, simple</h3>
-          <p className="dark-copy">
+          <p className="dark-copy copy">
             Blogr is a free and open source application backed by a large
             community of helpful developers. It supports features such as code
             syntax highlighting, RSS feeds, social media integration,
@@ -20,7 +20,7 @@ const MainBottom = () => {
             learn.
           </p>
           <h3 className="main__subheading dark-heading">Powerful tooling</h3>
-          <p className="dark-copy">
+          <p className="dark-copy copy">
             Batteries included. We built a simple and straightforward CLI tool
             that makes customization and deployment a breeze, but capable of
             producing even the most complicated sites.

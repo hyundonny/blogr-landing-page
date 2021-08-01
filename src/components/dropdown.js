@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
 import cn from "classnames";
 
-const links = {
-  Product: ["Overview", "Pricing", "Marketplace", "Features", "Integrations"],
-  Company: ["About", "Team", "Blog", "Careers"],
-  Connect: ["Contact", "Newsletter", "LinkedIn"],
-};
+import { links } from "../assets/links";
 
 const Dropdown = ({ label, mobileMenuOpen }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);

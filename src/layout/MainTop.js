@@ -12,7 +12,7 @@ const MainTop = () => {
               <h3 className="main__subheading dark-heading ">
                 Introducing an extensible editor
               </h3>
-              <p className="dark-copy">
+              <p className="dark-copy copy">
                 Blogr features an exceedingly intuitive interface which lets you
                 focus on one thing: creating content. The editor supports
                 management of multiple blogs and allows easy manipulation of
@@ -23,7 +23,7 @@ const MainTop = () => {
               <h3 className="main__subheading dark-heading">
                 Robust content management
               </h3>
-              <p className="dark-copy">
+              <p className="dark-copy copy">
                 Flexible content management enables users to easily move through
                 posts. Increase the usability of your blog by adding customized
                 categories, sections, format, or flow. With this functionality,
