@@ -1,4 +1,4 @@
-import Intro from "./layout/IntroSection";
+import Intro from "./layout/Intro";
 import MainTop from "./layout/MainTop";
 import MainMiddle from "./layout/MainMiddle";
 import MainBottom from "./layout/MainBottom";
