@@ -8,7 +8,7 @@ const MobileMenu = ({ mobileMenuOpen }) => {
 
   return (
     <div
-      className={cn("mobile-menu container", { active: mobileMenuOpen })}
+      className={cn("mobile-menu", { active: mobileMenuOpen })}
       onClick={stopBubbling}
     >
       <ul className="mobile-menu__links">
